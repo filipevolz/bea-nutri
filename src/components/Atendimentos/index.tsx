@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Check } from "lucide-react";
 import {
     AtendimentosContainer,
     AtendimentosSection,
@@ -44,28 +44,39 @@ export function Atendimentos() {
                     <AtendimentosHeaderText>
                         <AtendimentosTitle>Atendimentos</AtendimentosTitle>
                         <AtendimentosDescription>
-                    <p>
-                        Nos meus atendimentos, busco criar um <strong>espaço seguro de acolhimento</strong> e entender qual é a sua história,
-                        seus objetivos, sua rotina e dificuldades. Quero que você não apenas
-                        tenha resultado, mas que esse <strong>resultado se mantenha e funcione pro resto da sua vida</strong>.
-                    </p>
-                    <p>
-                        Você recebe um <strong>plano alimentar individualizado</strong>, sem privação,
-                        voltado a sua rotina, realidade e preferências. Você também recebe
-                        <strong> orientações e materiais exclusivos</strong>, além do meu
-                        <strong> suporte on-line</strong> ao longo do processo. O objetivo é que você não
-                        se sinta sozinho!
-                    </p>
-                    <p>
-                        Você terá um <strong>plano de ação personalizado</strong> já na primeira consulta.
-                        Ao longo das consultas vamos acompanhando a sua evolução, trabalhando os
-                        pontos de dificuldade e <strong>progredindo as estratégias</strong> ao longo do
-                        tempo. Você recebe tarefas ao longo do tratamento que auxiliarão na
-                        consolidação do hábito. Dessa forma, você cria
-                        <strong> resultados consistentes</strong>
-                        que se manterão na sua rotina.
-                    </p>
+                            <p>
+                                Nos meus atendimentos, busco criar um <strong>espaço seguro de acolhimento</strong> e entender qual é a sua história,
+                                seus objetivos, sua rotina e dificuldades. Quero que você não apenas
+                                tenha resultado, mas que esse <strong>resultado se mantenha e funcione pro resto da sua vida</strong>.
+                            </p>
                         </AtendimentosDescription>
+                        <AtendimentosList>
+                            {[
+                                "**Plano alimentar individualizado**, sem privação, voltado à sua rotina, realidade e preferências",
+                                "**Orientações e materiais exclusivos** para te apoiar no processo",
+                                "**Suporte on-line** ao longo de todo o tratamento - você não estará sozinho!",
+                                "**Plano de ação personalizado** já na primeira consulta",
+                                "Acompanhamento da sua evolução e **progressão das estratégias** ao longo do tempo",
+                                "Tarefas ao longo do tratamento para **consolidação do hábito**",
+                                "**Resultados consistentes** que se manterão na sua rotina"
+                            ].map((item, index) => {
+                                // Processar texto para destacar palavras em negrito
+                                const parts = item.split(/(?=\*\*)|(?<=\*\*)/);
+                                const processedText = parts.map((part, i) => {
+                                    if (part.startsWith('**') && part.endsWith('**')) {
+                                        return <strong key={i}>{part.slice(2, -2)}</strong>;
+                                    }
+                                    return part;
+                                });
+
+                                return (
+                                    <AtendimentosListItem key={index}>
+                                        <Check size={20} color="#ec4899" />
+                                        <span>{processedText}</span>
+                                    </AtendimentosListItem>
+                                );
+                            })}
+                        </AtendimentosList>
                     </AtendimentosHeaderText>
                 </AtendimentosHeader>
 
