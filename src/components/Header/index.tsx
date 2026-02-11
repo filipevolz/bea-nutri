@@ -86,6 +86,9 @@ export function Header() {
                             <MobileMenuLink onClick={() => scrollToSection("agendar")}>
                                 Agendar
                             </MobileMenuLink>
+                            <MobileMenuLink onClick={() => scrollToSection("faq")}>
+                                Perguntas frequentes
+                            </MobileMenuLink>
                             <MobileMenuButtonWrapper>
                                 <Button
                                     variant="default"
