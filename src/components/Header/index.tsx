@@ -47,6 +47,9 @@ export function Header() {
                 <MenuLink onClick={() => scrollToSection("agendar")}>
                     Agendar
                 </MenuLink>
+                <MenuLink onClick={() => scrollToSection("faq")}>
+                    FAQ
+                </MenuLink>
                 <Button
                     variant="default"
                     onClick={() => window.open("https://wa.me/5548988579612", "_blank")}
