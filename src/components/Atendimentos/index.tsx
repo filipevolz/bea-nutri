@@ -80,24 +80,6 @@ export function Atendimentos() {
                     </AtendimentosHeaderText>
                 </AtendimentosHeader>
 
-                <Card style={{ marginTop: "3rem", padding: "1.5rem 0" }}>
-                    <CardHeader>
-                        <CardTitle style={{ fontSize: "1.75rem", marginBottom: "1rem" }}>
-                            Você recebe:
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <AtendimentosList>
-                            {beneficios.map((beneficio, index) => (
-                                <AtendimentosListItem key={index}>
-                                    <CheckCircle2 size={24} color="#ec4899" />
-                                    <span>{beneficio}</span>
-                                </AtendimentosListItem>
-                            ))}
-                        </AtendimentosList>
-                    </CardContent>
-                </Card>
-
                 <AtendimentosImages>
                     <AtendimentosImageCard>
                         <AtendimentosImageText>

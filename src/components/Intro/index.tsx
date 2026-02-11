@@ -1,4 +1,5 @@
-import { Check } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
+import { Card, CardContent } from "../ui/card";
 import {
     IntroContainer,
     IntroContent,
@@ -68,10 +69,32 @@ export function Intro() {
                             );
                         })}
                     </IntroList>
-                    <IntroDescription style={{ marginTop: "1.5rem" }}>
-                        Com uma abordagem cientificamente embasada, você pode transformar sua
-                        relação com a comida e conquistar o corpo que deseja!
-                    </IntroDescription>
+                    <Card style={{ 
+                        background: "linear-gradient(135deg, #fef3f8 0%, #fce7f3 100%)",
+                        border: "1px solid #fbcfe8",
+                        borderRadius: "12px",
+                        padding: "1.5rem",
+                        display: 'inline'
+                    }}>
+                        <div style={{
+                            width: "48px",
+                            height: "48px",
+                            borderRadius: "12px",
+                            background: "linear-gradient(135deg, #ec4899 0%, #f472b6 100%)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            flexShrink: 0,
+                            float: 'left',
+                            marginRight: '0.5rem'
+                        }}>
+                            <Sparkles size={24} color="white" />
+                        </div>
+                            <IntroDescription style={{ margin: 0 }}>
+                                Com uma abordagem cientificamente embasada, você pode transformar sua
+                                relação com a comida e conquistar o corpo que deseja!
+                            </IntroDescription>
+                    </Card>
                 </IntroText>
             </IntroContent>
         </IntroContainer>

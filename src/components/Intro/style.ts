@@ -68,9 +68,9 @@ export const IntroTitle = styled.h2`
 
 export const IntroDescription = styled.p`
     font-size: 1.125rem;
-    line-height: 1.7;
+    line-height: 1.5;
     color: #4a5568;
-    margin: 0;
+    text-align: left; 
 
     strong {
         color: #1a1a1a;
