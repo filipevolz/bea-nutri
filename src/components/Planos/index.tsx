@@ -132,7 +132,7 @@ export function Planos() {
                                     <Button 
                                         variant={plano.popular ? "default" : "outline"} 
                                         size="lg" 
-                                        style={{ width: "100%" }}
+                                        style={{ width: "100%", backgroundColor: "#ec4899", color: "white" }}
                                         onClick={() => window.open("https://wa.me/5548988579612", "_blank")}
                                     >
                                         Agendar
