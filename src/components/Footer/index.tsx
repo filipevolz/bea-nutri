@@ -38,7 +38,7 @@ export function Footer() {
                 {/* Seção Central - Logo, Redes Sociais e CTA */}
                 <FooterCenter>
                     <FooterLogo>
-                        <FooterLogoImage src="/logotipo2.svg" alt="Logo" />
+                        <FooterLogoImage src={`${import.meta.env.BASE_URL}logotipo2.svg`} alt="Logo" />
                         <FooterBrand>
                             <div style={{ fontFamily: 'cursive', fontSize: '1.5rem', fontWeight: 600 }}>
                                 Beatrice Orthmann

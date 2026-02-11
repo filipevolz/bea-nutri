@@ -39,7 +39,7 @@ export function Atendimentos() {
             <AtendimentosSection>
                 <AtendimentosHeader>
                     <AtendimentosHeaderImage>
-                        <img src="/photos/atendimentoNova.jpg" alt="Atendimento" />
+                        <img src={`${import.meta.env.BASE_URL}photos/atendimentoNova.jpg`} alt="Atendimento" />
                     </AtendimentosHeaderImage>
                     <AtendimentosHeaderText>
                         <AtendimentosTitle>Atendimentos</AtendimentosTitle>
@@ -93,14 +93,14 @@ export function Atendimentos() {
                             Atendimento presencial em Florianópolis, com um espaço acolhedor
                             para você.
                         </AtendimentosImageText>
-                        <img src="/photos/bea-presencial.jpg" alt="Atendimento presencial" />
+                        <img src={`${import.meta.env.BASE_URL}photos/bea-presencial.jpg`} alt="Atendimento presencial" />
                     </AtendimentosImageCard>
                     <AtendimentosImageCard>
                         <AtendimentosImageText>
                             Atendimento on-line no conforto e praticidade da sua casa, com a
                             mesma eficácia do atendimento presencial.
                         </AtendimentosImageText>
-                        <img src="/photos/atendimentos.jpg" alt="Atendimento online" />
+                        <img src={`${import.meta.env.BASE_URL}photos/atendimentos.jpg`} alt="Atendimento online" />
                     </AtendimentosImageCard>
                 </AtendimentosImages>
             </AtendimentosSection>

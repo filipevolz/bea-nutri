@@ -6,7 +6,6 @@ import {
     AgendarImage,
     AgendarText,
     AgendarTitle,
-    AgendarButton
 } from "./style";
 
 export function Agendar() {
@@ -14,7 +13,7 @@ export function Agendar() {
         <AgendarContainer id="agendar">
             <AgendarContent>
                 <AgendarImage>
-                    <img src="/photos/beaProfi.png" alt="Beatrice Orthmann" />
+                    <img src={`${import.meta.env.BASE_URL}photos/beaProfi.png`} alt="Beatrice Orthmann" />
                 </AgendarImage>
                 <AgendarText>
                     <AgendarTitle>

@@ -13,7 +13,7 @@ export function SobreMim() {
         <SobreMimContainer id="sobre-mim">
             <SobreMimContent $reverse={true}>
                 <SobreMimImage>
-                    <img src="/photos/sobreMim2.jpg" alt="Beatrice Orthmann" />
+                    <img src={`${import.meta.env.BASE_URL}photos/sobreMim2.jpg`} alt="Beatrice Orthmann" />
                 </SobreMimImage>
                 <SobreMimText>
                     <SobreMimTitle>Sobre mim</SobreMimTitle>

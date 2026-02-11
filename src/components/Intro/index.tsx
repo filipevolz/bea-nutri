@@ -26,7 +26,7 @@ export function Intro() {
         <IntroContainer id="intro">
             <IntroContent $reverse={false}>
                 <IntroImage>
-                    <img src="/photos/sobreMimNew1.png" alt="Beatrice Orthmann" />
+                    <img src={`${import.meta.env.BASE_URL}photos/sobreMimNew1.png`} alt="Beatrice Orthmann" />
                 </IntroImage>
                 <IntroText>
                     <IntroTitle>
@@ -42,7 +42,7 @@ export function Intro() {
 
             <IntroContent $reverse={true}>
                 <IntroImage>
-                    <img src="/photos/bea-profile-new.jpg" alt="Beatrice Orthmann" />
+                    <img src={`${import.meta.env.BASE_URL}photos/bea-profile-new.jpg`} alt="Beatrice Orthmann" />
                 </IntroImage>
                 <IntroText>
                     <IntroDescription>

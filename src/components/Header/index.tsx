@@ -33,8 +33,8 @@ export function Header() {
     return (
         <HeaderContainer>
             <Logo onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} style={{ cursor: "pointer" }}>
-                <img src="/logotipo2.svg" alt="Logo" />
-                <img src="/logoMarca.svg" alt="Marca" />
+                <img src={`${import.meta.env.BASE_URL}logotipo2.svg`} alt="Logo" />
+                <img src={`${import.meta.env.BASE_URL}logoMarca.svg`} alt="Marca" />
             </Logo>
 
             <Menu>

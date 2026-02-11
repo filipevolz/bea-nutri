@@ -27,7 +27,7 @@ export function Hero() {
                 </HeroButtons>
             </HeroContent>
             <HeroImage>
-                <img src="/photos/beaProfiNewCapa.png" alt="Beatrice Orthmann" />
+                <img src={`${import.meta.env.BASE_URL}photos/beaProfiNewCapa.png`} alt="Beatrice Orthmann" />
             </HeroImage>
         </HeroContainer>
     );
