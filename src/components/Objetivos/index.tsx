@@ -123,6 +123,7 @@ export function Objetivos() {
                                         variant="default"
                                         size="sm"
                                         onClick={() => openDialog(index)}
+                                        style={{ backgroundColor: "#ec4899", color: "white" }}
                                     >
                                         Saiba mais
                                     </Button>
