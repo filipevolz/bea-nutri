@@ -1,5 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { CheckCircle2, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import {
     AtendimentosContainer,
     AtendimentosSection,
@@ -14,24 +13,6 @@ import {
     AtendimentosImageCard,
     AtendimentosImageText
 } from "./style";
-
-const beneficios = [
-    "Atendimento personalizado voltado aos seus objetivos",
-    "Plano alimentar adequado à sua rotina e preferências",
-    "Orientações e tarefas para trabalhar suas principais dificuldades",
-    "Avaliação da composição corporal por bioimpedância, dobras cutâneas ou Body3d (online)",
-    "Avaliação de exames",
-    "Indicações de produtos e alimentos",
-    "Prescrições de suplemento quando necessário",
-    "Materiais exclusivos",
-    "Lista de compras",
-    "Plataforma de treinos",
-    "Acompanhamento das refeições pelo diário alimentar",
-    "Feedback quinzenal",
-    "Receitas práticas",
-    "Acesso ao aplicativo exclusivo",
-    "Suporte online"
-];
 
 export function Atendimentos() {
     return (
