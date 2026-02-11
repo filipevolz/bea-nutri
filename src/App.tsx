@@ -23,9 +23,9 @@ export function App() {
       <Atendimentos />
       <Planos />
       <Reviews />
-      <FAQ />
       <Agendar />
       <Instagram />
+      <FAQ />
       <Footer />
       <FloatingWhatsApp />
     </>
